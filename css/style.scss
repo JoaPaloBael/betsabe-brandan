@@ -1,6 +1,7 @@
-@import './vars/typo';
+@import './utilities/typo';
 @import './utilities/reset';
-@import  './vars/color';
+@import  './utilities/color';
 
 @import './sections/nav';
 @import './sections/header';
+@import './sections/frase-destacada';
