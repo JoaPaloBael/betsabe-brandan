@@ -1,0 +1,41 @@
+.header{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1546387903-6d82d96ccca6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');
+    background-size: cover;
+    background-position: center;
+    color: $gris-texto;
+    div{
+        background-color: $rosa-transparente;
+        width: 460px;
+        padding: 40px 40px 20px 40px;
+        text-align: center;
+        margin: 0 auto;
+        box-shadow: 5px 5px 4px -1px gray;
+        h2{
+            margin: 10px 0;
+        }
+        p{
+            font-size: 13px;
+            margin: 10px 0;
+        }
+    }
+
+    button{
+        background-color: $rosa-oscuro;
+        border: none;
+        color: $blanco;
+        width: 460px;
+        padding: 15px;
+        margin: 0 auto;
+        box-shadow: 5px 0px 4px -1px gray;
+        &:hover{
+            font-weight: bold;
+            background-color: $rosa-resalta;
+        }
+    }
+
+
+}
