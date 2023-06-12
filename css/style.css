@@ -111,6 +111,7 @@
 #mision {
   background-image: linear-gradient(to right, #FFFFFF 25%, #F5F5F5 25%);
   margin: 30px 0;
+  color: #707070;
 }
 #mision .mision__container {
   display: flex;
@@ -136,6 +137,9 @@
 #mision .mision__container .mision__textcontainer .mision__texto {
   max-width: 470px;
   padding: 10px;
+}
+#mision .mision__container .mision__textcontainer .mision__texto p {
+  margin: 7px;
 }
 #mision .mision__container .mision__textcontainer .mision__titulo {
   background-color: #CF8867;

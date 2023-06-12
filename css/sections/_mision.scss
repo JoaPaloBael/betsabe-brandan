@@ -1,6 +1,7 @@
 #mision{
     background-image: linear-gradient(to right, $blanco 25%, $gris 25%);
     margin: 30px 0;
+    color: $gris-texto-mediano;
 
     .mision__container{
         display: flex;
@@ -25,6 +26,9 @@
             .mision__texto{
                 max-width: 470px;
                 padding: 10px;
+                p{
+                    margin: 7px;
+                }
             }
             .mision__titulo{
                 background-color: $rosa-resalta;
