@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -109,7 +108,7 @@
 }
 
 #mision {
-  background-image: linear-gradient(to right, #FFFFFF 25%, #F5F5F5 25%);
+  background-image: linear-gradient(to right, #FFFFFF 35%, #F5F5F5 25%);
   margin: 30px 0;
   color: #707070;
 }
@@ -152,4 +151,46 @@
   position: relative;
   left: -75px;
   top: 9px;
+}
+
+.mi-historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "titulo titulo" "texto-resaltado parrafo2" "parrafo1 parrafo2";
+  max-width: 850px;
+  margin: auto;
+  color: #707070;
+}
+.mi-historia h3 {
+  font-family: serif;
+  color: #61341A;
+  font-weight: lighter;
+  font-size: 36px;
+  grid-area: titulo;
+  padding: 20px 0;
+}
+.mi-historia .texto-resaltado {
+  color: #FFFFFF;
+  grid-area: texto-resaltado;
+  margin: 0 0 30px 0;
+}
+.mi-historia .texto-resaltado p {
+  display: inline-block;
+  background-color: #CF8867;
+  margin: 3px 0;
+  padding: 7px;
+}
+.mi-historia img {
+  width: 100%;
+}
+.mi-historia .parrafo1 {
+  grid-area: parrafo1;
+  margin-right: 15px;
+}
+.mi-historia .parrafo2 {
+  grid-area: parrafo2;
+  margin-left: 15px;
+}
+.mi-historia p {
+  margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */

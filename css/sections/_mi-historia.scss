@@ -1,0 +1,45 @@
+.mi-historia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "texto-resaltado parrafo2"
+    "parrafo1 parrafo2";
+    max-width: 850px;
+    margin: auto;
+    color: $gris-texto-mediano;
+    h3{
+        font-family: $serif;
+        color: $marron-titulo;
+        font-weight: lighter;
+        font-size: 36px;
+        grid-area: titulo;
+        padding: 20px 0;
+    }
+    .texto-resaltado{
+        color: $blanco;
+        grid-area: texto-resaltado;
+        margin: 0 0 30px 0;
+        p{
+            display: inline-block;
+            background-color: $rosa-resalta;
+            margin: 3px 0;
+            padding: 7px;
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .parrafo1{
+        grid-area: parrafo1;
+        margin-right: 15px;
+    }
+    .parrafo2{
+        grid-area: parrafo2;
+        margin-left: 15px;
+    }
+    p{
+        margin: 20px 0;
+    }
+    
+}
