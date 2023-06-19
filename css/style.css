@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+.italica {
+  font-style: italic;
+}
+
 .nav {
   background-color: #FFFFFF;
   color: #AD7062;
