@@ -18,7 +18,15 @@
 
 main {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto 70px auto;
+}
+
+.flecha-arriba {
+  color: #AD7062;
+  font-size: 50px;
+  position: fixed;
+  top: 65vh;
+  right: 35px;
 }
 
 .nav {
@@ -36,6 +44,7 @@ main {
 }
 .nav .nav__logo h1, .nav .nav__logo span {
   font-family: serif;
+  font-size: 40px;
 }
 .nav .nav__logo span {
   font-weight: bolder;
@@ -116,40 +125,40 @@ main {
   border-left: #707070 2px solid;
 }
 
-#mision {
+.mision {
   background-image: linear-gradient(to right, #FFFFFF 35%, #F5F5F5 25%);
   margin: 30px 0;
   color: #707070;
 }
-#mision .mision__container {
+.mision .mision__container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 35px;
 }
-#mision .mision__container .mision__img {
+.mision .mision__container .mision__img {
   height: 520px;
   width: 360px;
   overflow: hidden;
   border: 15px solid #FFFFFF;
 }
-#mision .mision__container .mision__img img {
+.mision .mision__container .mision__img img {
   width: 100%;
 }
-#mision .mision__container .mision__textcontainer {
+.mision .mision__container .mision__textcontainer {
   display: flex;
   flex-direction: column;
   height: 520px;
   justify-content: space-around;
 }
-#mision .mision__container .mision__textcontainer .mision__texto {
+.mision .mision__container .mision__textcontainer .mision__texto {
   max-width: 470px;
   padding: 10px;
 }
-#mision .mision__container .mision__textcontainer .mision__texto p {
+.mision .mision__container .mision__textcontainer .mision__texto p {
   margin: 7px;
 }
-#mision .mision__container .mision__textcontainer .mision__titulo {
+.mision .mision__container .mision__textcontainer .mision__titulo {
   background-color: #CF8867;
   width: 335px;
   color: white;
@@ -284,13 +293,17 @@ main {
 .contacto form input {
   border: none;
   border-bottom: 1px solid #707070;
-  margin: 30px 0;
+  margin: 20px 0;
   color: #707070;
   font-size: 20px;
+  padding: 10px 0;
 }
 .contacto form input:focus {
   outline: none;
-  border-bottom: 2px solid #707070;
+  border-bottom: 1px solid #393939;
+  background-color: #F5F5F5;
+  transition: all 0.3s;
+  border-radius: 10px;
 }
 .contacto form input[type=submit] {
   background-color: #AD7062;
@@ -322,4 +335,35 @@ main {
   display: flex;
   flex-direction: column;
   width: 45%;
+}
+
+.footer {
+  background-color: #AD7062;
+}
+.footer p {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer div ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 20px;
+}
+.footer div ul li {
+  margin: 0 30px;
+  padding: 10px;
+}
+.footer div ul li a i {
+  color: white;
+  font-size: 35px;
+}
+.footer .copy {
+  padding: 20px 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer .copy a {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

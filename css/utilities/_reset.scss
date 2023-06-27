@@ -18,5 +18,13 @@
 
 main{
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto 70px auto ;
+}
+
+.flecha-arriba{
+    color: $rosa-oscuro;
+    font-size: 50px;
+    position: fixed;
+    top: 65vh;
+    right: 35px;
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Betsabe Brandan | Psicología</title>
 </head>
@@ -26,7 +27,7 @@
         </ul>
     </nav>
 
-    <header class="header">
+    <header class="header" id="arriba">
 
         <div>
             <h2>Ataques de pánico, ansiedad <span class="display-block">y crisis de angustia</span></h2>
@@ -39,23 +40,23 @@
         <button>Primera sesión sin cargo</button>
     </header>
 
-    <section class="frase-destacada">
+    <section class="frase-destacada" >
 
             <h2>Respirá. Vas a estar bien</h2>
             <p>Encontrá el equilibrio y la serenidad que necesitas para sueprar los ataques de pánico, la ansiedad y las
                 crisis de angustia.
-                <span class="display-block">Descubrí el poder de sanar desde adentro.</span>
+                <span class="display-block" id="mision" >Descubrí el poder de sanar desde adentro.</span>
             </p>
 
     </section>
 
     <main class="main">
 
-        <section id="mision">
+        <section class="mision">
             <div class="mision__container">
                 <div class="mision__img">
                     <img src="https://images.unsplash.com/photo-1675590944228-80b28b8fa886?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                        alt="Retrato">
+                        alt="Retrato" >
                 </div>
                 <div class="mision__textcontainer">
                     <h3 class="mision__titulo">¡Qué bueno que estés acá!</h3>
@@ -78,7 +79,7 @@
                             autoconocimiento que podría cambiar tu vida drásticamente. Yo lo hice y te cuento mi
                             experiencia.
                         </p>
-                        <p>
+                        <p id="mi-historia">
                             Entonces, <span class="negrita">¿te animas a tomar las riendas de tu vida?</span>
                         </p>
                     </div>
@@ -86,7 +87,7 @@
             </div>
         </section>
 
-        <section id="mi-historia" class="mi-historia">
+        <section  class="mi-historia">
             <h3>Mi historia</h3>
             <div class="texto-resaltado">
                 <p>"Luego de muchas frustraciones me propuse crear</p>
@@ -103,7 +104,7 @@
                     El tiempo me fue demostrando, que vivir en piloto automático o seguir mandatos ajenos,
                     solo generaba que se dilatará en el tiempo la<span class="negrita"> posibilidad de un buen vivir.</span>
                 </p>
-                <p>
+                <p >
                     <span class="negrita">El miedo y la ansiedad</span> al ¿Qué dirán? ¿Qué pasará? o del ¿Que haré luego? entre otros
                     interrogantes, me dejaban en ese incómodo e insalubre lugar donde veía que la vida
                     seguía corriendo pero gozosa de una <span class="negrita">falsa seguridad.</span>
@@ -128,16 +129,16 @@
                     deseos. Hizo que un día me encontrara lista para <span class="negrita">tomar las verdaderas riendas de mi
                     vida</span> y cambiarlas drásticamente, logrando dejar atrás los mandatos, obligaciones,
                     acomodar viejas heridas y redirigir <span class="negrita">mi proyecto de vida.</span></p>
-                <p>Luego de atravesar aquel largo y angustiante proceso, <span class="negrita">me convertí </span>en quien soy hoy en
+                <p id="servicios" >Luego de atravesar aquel largo y angustiante proceso, <span class="negrita">me convertí </span>en quien soy hoy en
                     día, una mujer <span class="negrita">segura e independiente</span> emocional y corporalmente. Logre un desarrollo y
                     expansión profesional sin fronteras.</p>
-                <p>Pudiendo tomar <span class="negrita">decisiones</span> desde la <span class="negrita">convicción</span> y
+                <p >Pudiendo tomar <span class="negrita">decisiones</span> desde la <span class="negrita">convicción</span> y
                     siendo más <span class="negrita">asertiva</span>. Pero sobre todo me convertí en un <span class="negrita">SER LIBRE.</span></p>
 
             </div>
         </section>
 
-        <section id="servicios" class="servicios">
+        <section class="servicios">
             <h3>Servicios</h3>
             <div class="servicios__container">
                 <ul>
@@ -203,21 +204,25 @@
                 <input type="submit">
             </form>
         </section>
+
+        <a href="#arriba" class="flecha-arriba">
+            <i class="fa-sharp fa-solid fa-circle-chevron-up"></i>
+        </a>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Encontrame en las redes</p>
         <div>
             <ul>
-                <li><a href="#">F</a></li>
-                <li><a href="#">L</a></li>
-                <li><a href="#">I</a></li>
-                <li><a href="#">W</a></li>
-                <li><a href="mailto:psico.brandan@gmail.com">G</a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+                <li><a href="mailto:psico.brandan@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
             </ul>
         </div>
         <hr>
-        <p>&copy Todos los derechos reservados 2023</p>
+        <p class="copy">&copy Todos los derechos reservados 2023 | Desarrollado por <a target="_blank" href="https://www.linkedin.com/in/johanna-palo-bael-frontend/">Johanna Palo</a></p>
     </footer>
 
 </body>
