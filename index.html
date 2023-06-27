@@ -48,9 +48,8 @@
             </p>
 
     </section>
+
     <main class="main">
-
-
 
         <section id="mision">
             <div class="mision__container">
@@ -184,20 +183,22 @@
             </div>
         </section>
 
-        <section id="contacto">
+        <section id="contacto" class="contacto">
             <h3>Estemos en contacto</h3>
             <form action="#" method="post" enctype="text/plain">
-                <div>
+                <div class="columna">
                     <label for="nombre-apellido">Nombre y apellido</label>
-                    <input type="text" name="nombre-apellido">
+                    <input type="text" name="nombre-apellido" required>
                 </div>
-                <div>
-                    <label for="e-mail">E-mail</label>
-                    <input type="email" name="e-mail">
-                </div>
-                <div>
-                    <label for="nacionalidad">Nacionalidad</label>
-                    <input type="text" name="nacionalidad">
+                <div class="fila">
+                    <div>
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" name="e-mail" required>
+                    </div>
+                    <div>
+                        <label for="nacionalidad">Nacionalidad</label>
+                        <input type="text" name="nacionalidad">
+                    </div>
                 </div>
                 <input type="submit">
             </form>
@@ -218,6 +219,7 @@
         <hr>
         <p>&copy Todos los derechos reservados 2023</p>
     </footer>
+
 </body>
 
 </html>

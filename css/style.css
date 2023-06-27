@@ -265,4 +265,61 @@ main {
 }
 .servicios__img img {
   height: 100%;
+}
+
+.contacto {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  color: #707070;
+}
+.contacto h3 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 30px 0 60px 0;
+}
+.contacto form label {
+  text-transform: uppercase;
+}
+.contacto form input {
+  border: none;
+  border-bottom: 1px solid #707070;
+  margin: 30px 0;
+  color: #707070;
+  font-size: 20px;
+}
+.contacto form input:focus {
+  outline: none;
+  border-bottom: 2px solid #707070;
+}
+.contacto form input[type=submit] {
+  background-color: #AD7062;
+  color: #FFFFFF;
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  padding: 15px;
+}
+.contacto form input[type=submit]:hover {
+  background-color: #CF8867;
+}
+
+.columna {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.fila {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+  justify-content: space-between;
+}
+.fila div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }/*# sourceMappingURL=style.css.map */
