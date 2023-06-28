@@ -97,7 +97,7 @@ main {
   background-color: #AD7062;
   border: none;
   color: #FFFFFF;
-  width: 460px;
+  width: 540px;
   padding: 15px;
   margin: 0 auto;
   box-shadow: 5px 0px 4px -1px gray;
@@ -121,8 +121,10 @@ main {
   padding: 45px;
   font-weight: lighter;
 }
-.frase-destacada p {
-  border-left: #707070 2px solid;
+.frase-destacada .divisor {
+  background-color: #707070;
+  width: 0.5px;
+  height: 65%;
 }
 
 .mision {
@@ -171,6 +173,15 @@ main {
   top: 9px;
 }
 
+@media (max-width: 800px) {
+  .mision .mision__container .mision__img img {
+    height: 100%;
+    width: auto;
+  }
+  .mision .mision__container .mision__textcontainer .mision__titulo {
+    top: 0;
+  }
+}
 .mi-historia {
   display: grid;
   grid-template-columns: 1fr 1fr;

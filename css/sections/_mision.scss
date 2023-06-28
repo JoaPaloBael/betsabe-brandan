@@ -45,3 +45,21 @@
         }
     }
 }
+
+@media (max-width: 800px){
+    .mision{
+        .mision__container{
+            .mision__img{
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            .mision__textcontainer{
+                .mision__titulo{
+                    top: 0;
+                }
+            }
+        }
+    }
+}

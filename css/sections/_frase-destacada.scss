@@ -11,7 +11,9 @@
         padding: 45px;
         font-weight: lighter;
     }
-    p{
-        border-left: #707070 2px solid;
+    .divisor{
+        background-color: $gris-texto-mediano;
+        width: .5px;
+        height: 65%;
     }
 }
