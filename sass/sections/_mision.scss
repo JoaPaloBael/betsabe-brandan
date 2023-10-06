@@ -3,14 +3,14 @@
     margin: 30px 0;
     color: $gris-texto-mediano;
 
-    .mision__container{
+    &__container{
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 35px;
 
         .mision__img{
-            height: 520px;
+            max-height: 520px;
             width: 360px;
             overflow: hidden;
             border: 15px solid $blanco;
@@ -21,7 +21,7 @@
         .mision__textcontainer{
             display: flex;
             flex-direction: column;
-            height: 520px;
+            min-height: 520px;
             justify-content: space-around;
             .mision__texto{
                 max-width: 470px;
@@ -29,6 +29,9 @@
                 p{
                     margin: 7px;
                 }
+            }
+            .mision__img--mob{
+                display: none;
             }
             .mision__titulo{
                 background-color: $rosa-resalta;
@@ -46,18 +49,50 @@
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 890px){
     .mision{
-        .mision__container{
+        &__container{
+            padding: 0;
             .mision__img{
-                img{
-                    height: 100%;
-                    width: auto;
-                }
+                width: 220px;
             }
             .mision__textcontainer{
                 .mision__titulo{
+                    left: 0;
                     top: 0;
+                    text-align: center;
+                }
+                .mision__texto{
+                    font-size: 1.05rem;
+                    p{
+                        margin: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .mision{
+        background-image: linear-gradient(to left, $gris, $gris);
+        margin: 0;
+        padding: 30px 0;
+        &__container{
+            .mision__img{
+                display: none;
+            }
+            .mision__textcontainer{
+                align-items: center;
+                text-align: justify;
+                .mision__img--mob{
+                    display: block;
+                    margin: auto;
+                    width: 250px;
+                    img{
+                        width: 250px;
+                        margin: auto;
+                    }
                 }
             }
         }

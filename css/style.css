@@ -29,7 +29,7 @@ main {
   right: 35px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .flecha-arriba {
     display: none;
   }
@@ -171,13 +171,14 @@ main {
 @media (max-width: 915px) {
   .frase-destacada {
     flex-direction: column;
+    color: #393939;
   }
   .frase-destacada h2, .frase-destacada p {
     padding: 15px;
     margin: 0 20px;
   }
   .frase-destacada h2 {
-    border-bottom: solid #707070 1px;
+    border-bottom: solid #393939 1px;
   }
   .divisor {
     display: none;
@@ -188,35 +189,38 @@ main {
   margin: 30px 0;
   color: #707070;
 }
-.mision .mision__container {
+.mision__container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 35px;
 }
-.mision .mision__container .mision__img {
-  height: 520px;
+.mision__container .mision__img {
+  max-height: 520px;
   width: 360px;
   overflow: hidden;
   border: 15px solid #FFFFFF;
 }
-.mision .mision__container .mision__img img {
+.mision__container .mision__img img {
   width: 100%;
 }
-.mision .mision__container .mision__textcontainer {
+.mision__container .mision__textcontainer {
   display: flex;
   flex-direction: column;
-  height: 520px;
+  min-height: 520px;
   justify-content: space-around;
 }
-.mision .mision__container .mision__textcontainer .mision__texto {
+.mision__container .mision__textcontainer .mision__texto {
   max-width: 470px;
   padding: 10px;
 }
-.mision .mision__container .mision__textcontainer .mision__texto p {
+.mision__container .mision__textcontainer .mision__texto p {
   margin: 7px;
 }
-.mision .mision__container .mision__textcontainer .mision__titulo {
+.mision__container .mision__textcontainer .mision__img--mob {
+  display: none;
+}
+.mision__container .mision__textcontainer .mision__titulo {
   background-color: #CF8867;
   width: 335px;
   color: white;
@@ -229,13 +233,46 @@ main {
   top: 9px;
 }
 
-@media (max-width: 800px) {
-  .mision .mision__container .mision__img img {
-    height: 100%;
-    width: auto;
+@media (max-width: 890px) {
+  .mision__container {
+    padding: 0;
   }
-  .mision .mision__container .mision__textcontainer .mision__titulo {
+  .mision__container .mision__img {
+    width: 220px;
+  }
+  .mision__container .mision__textcontainer .mision__titulo {
+    left: 0;
     top: 0;
+    text-align: center;
+  }
+  .mision__container .mision__textcontainer .mision__texto {
+    font-size: 1.05rem;
+  }
+  .mision__container .mision__textcontainer .mision__texto p {
+    margin: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .mision {
+    background-image: linear-gradient(to left, #F5F5F5, #F5F5F5);
+    margin: 0;
+    padding: 30px 0;
+  }
+  .mision__container .mision__img {
+    display: none;
+  }
+  .mision__container .mision__textcontainer {
+    align-items: center;
+    text-align: justify;
+  }
+  .mision__container .mision__textcontainer .mision__img--mob {
+    display: block;
+    margin: auto;
+    width: 250px;
+  }
+  .mision__container .mision__textcontainer .mision__img--mob img {
+    width: 250px;
+    margin: auto;
   }
 }
 .mi-historia {
