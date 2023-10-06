@@ -42,12 +42,8 @@ main {
   left: 0;
   z-index: 1;
 }
-.nav .nav__logo h1, .nav .nav__logo span {
-  font-family: serif;
-  font-size: 40px;
-}
-.nav .nav__logo span {
-  font-weight: bolder;
+.nav .nav__logo img {
+  height: 80px;
 }
 .nav .nav__izquierda, .nav .nav__derecha {
   list-style: none;
