@@ -35,6 +35,7 @@
                 margin: 15px;
                 padding: 10px;
                 position: relative;
+                width: 300px;
                 h4{
                     color: white;
                     font-weight: lighter;
@@ -51,12 +52,39 @@
         }
     }
     &__img{
-        height: 520px;
-        width: 360px;
+        max-width: 360px;
         overflow: hidden;
         border: 15px solid $blanco;
         img{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:750px){
+    .servicios{
+        background-image: linear-gradient(to left, $gris, $gris);
+        &__container{
+            ul{
+                padding-top: 0;
+                .resalta1, .resalta2{
+                    margin: 5px auto;
+                    left: 0;
+                }
+            }
+        }
+        &__img{
             height: 100%;
+            max-width: 220px;
+            border: 5px solid $blanco;
+        }
+    }
+}
+
+@media (max-width: 580px){
+    .servicios{
+        &__img{
+            display: none;
         }
     }
 }
