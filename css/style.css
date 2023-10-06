@@ -317,6 +317,28 @@ main {
   margin: 20px 0;
 }
 
+@media (max-width: 900px) {
+  .mi-historia {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "texto-resaltado" "parrafo1" "parrafo2";
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+  }
+  .mi-historia .texto-resaltado {
+    margin: 0;
+  }
+  .mi-historia img {
+    max-width: 300px;
+  }
+  .mi-historia .parrafo1, .mi-historia .parrafo2 {
+    margin: 0;
+  }
+  .mi-historia p {
+    text-align: justify;
+    padding: 0 30px;
+  }
+}
 .servicios {
   background-image: linear-gradient(to left, #FFFFFF 35%, #F5F5F5 25%);
   margin: 30px 0;
