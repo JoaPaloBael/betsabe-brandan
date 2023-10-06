@@ -29,6 +29,11 @@ main {
   right: 35px;
 }
 
+@media (max-width: 860px) {
+  .flecha-arriba {
+    display: none;
+  }
+}
 .nav {
   background-color: #FFFFFF;
   color: #AD7062;
@@ -152,7 +157,7 @@ main {
   color: #FFFFFF;
 }
 .frase-destacada h2, .frase-destacada p {
-  width: 460px;
+  max-width: 460px;
   text-align: center;
   padding: 45px;
   font-weight: lighter;
@@ -163,6 +168,21 @@ main {
   height: 65%;
 }
 
+@media (max-width: 915px) {
+  .frase-destacada {
+    flex-direction: column;
+  }
+  .frase-destacada h2, .frase-destacada p {
+    padding: 15px;
+    margin: 0 20px;
+  }
+  .frase-destacada h2 {
+    border-bottom: solid #707070 1px;
+  }
+  .divisor {
+    display: none;
+  }
+}
 .mision {
   background-image: linear-gradient(to right, #FFFFFF 35%, #F5F5F5 25%);
   margin: 30px 0;

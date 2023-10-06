@@ -6,7 +6,7 @@
     height: 200px;
     color: $blanco;
     h2,p{
-        width: 460px;
+        max-width: 460px;
         text-align: center;
         padding: 45px;
         font-weight: lighter;
@@ -15,5 +15,21 @@
         background-color: $gris-texto-mediano;
         width: .5px;
         height: 65%;
+    }
+}
+
+@media(max-width: 915px){
+    .frase-destacada{
+        flex-direction: column;
+        h2,p{
+            padding: 15px;
+            margin: 0 20px;
+        }
+        h2{
+            border-bottom: solid $gris-texto-mediano 1px;
+        }
+    }
+    .divisor{
+        display: none;
     }
 }

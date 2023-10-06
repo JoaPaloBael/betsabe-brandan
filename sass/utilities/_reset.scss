@@ -28,3 +28,9 @@ main{
     top: 65vh;
     right: 35px;
 }
+
+@media (max-width: 860px){
+    .flecha-arriba{
+        display: none;
+    }
+}
