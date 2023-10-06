@@ -114,7 +114,7 @@ main {
   margin: 10px 0;
 }
 .header div p {
-  font-size: 13px;
+  font-size: 1rem;
   margin: 10px 0;
 }
 .header button {
@@ -131,6 +131,18 @@ main {
   background-color: #CF8867;
 }
 
+@media (max-width: 600px) {
+  .header div {
+    width: 310px;
+    padding: 20px;
+  }
+  .header div h2 {
+    margin-bottom: 40px;
+  }
+  .header button {
+    width: 350px;
+  }
+}
 .frase-destacada {
   background-color: #DDBCAF;
   display: flex;

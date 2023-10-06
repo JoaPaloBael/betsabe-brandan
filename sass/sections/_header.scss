@@ -19,7 +19,7 @@
             margin: 10px 0;
         }
         p{
-            font-size: 13px;
+            font-size: 1rem;
             margin: 10px 0;
         }
     }
@@ -39,4 +39,19 @@
     }
 
 
+}
+
+@media (max-width:600px){
+    .header{
+        div{
+            width: 310px;
+            padding: 20px;
+            h2{
+                margin-bottom: 40px;
+            }
+        }
+        button{
+            width: (270px + 80px);
+        }
+    }
 }
