@@ -405,6 +405,7 @@ main {
 @media (max-width: 750px) {
   .servicios {
     background-image: linear-gradient(to left, #F5F5F5, #F5F5F5);
+    padding-bottom: 20px;
   }
   .servicios__container ul {
     padding-top: 0;
@@ -485,6 +486,16 @@ main {
   width: 45%;
 }
 
+@media (max-width: 750px) {
+  .contacto {
+    max-width: 540px;
+  }
+}
+@media (max-width: 590px) {
+  .contacto {
+    max-width: 340px;
+  }
+}
 .footer {
   background-color: #AD7062;
 }
@@ -495,6 +506,7 @@ main {
 }
 .footer div ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
   margin: 20px;

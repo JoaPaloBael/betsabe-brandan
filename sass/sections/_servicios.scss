@@ -64,6 +64,7 @@
 @media (max-width:750px){
     .servicios{
         background-image: linear-gradient(to left, $gris, $gris);
+        padding-bottom: 20px;
         &__container{
             ul{
                 padding-top: 0;
