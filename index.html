@@ -188,7 +188,7 @@
                     </li>
                 </ul>
                 <div class="servicios__img">
-                    <img src="./recursos/betsy-fotos/03.jpg"
+                    <img src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
                         alt="Manos">
                 </div>
             </div>
@@ -196,19 +196,19 @@
 
         <section id="contacto" class="contacto">
             <h3>Estemos en contacto</h3>
-            <form action="#" method="post" enctype="text/plain">
+            <form action="form.php" method="POST">
                 <div class="columna">
-                    <label for="nombre-apellido">Nombre y apellido</label>
-                    <input type="text" name="nombre-apellido" required>
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" name="nombre" id="nombre" required>
                 </div>
                 <div class="fila">
                     <div>
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" name="e-mail" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div>
                         <label for="nacionalidad">Nacionalidad</label>
-                        <input type="text" name="nacionalidad">
+                        <input type="text" name="nacionalidad" id="nacionalidad">
                     </div>
                 </div>
                 <input type="submit">
