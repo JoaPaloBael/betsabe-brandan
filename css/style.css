@@ -526,4 +526,21 @@ main {
 }
 .footer .copy a {
   color: #FFFFFF;
+}
+
+div.success-msj {
+  height: 100vh;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div.success-msj h1 {
+  color: #AD7062;
+  margin: 15px;
+}
+div.success-msj p {
+  color: #393939;
 }/*# sourceMappingURL=style.css.map */
