@@ -15,12 +15,12 @@ $email = $_POST["email"];
 $nacionalidad = $_POST["nacionalidad"];
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-$smtpHost = "c2102219.ferozo.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "info@libre-mente.com.ar";  // Mi cuenta de correo
-$smtpClave = "92CeBM@5aR";  // Mi contraseña
+$smtpHost = "333";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "444@111";  // Mi cuenta de correo
+$smtpClave = "222222";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
-$emailDestino = "info@libre-mente.com.ar";
+$emailDestino = "444@111";
 
 $mail = new PHPMailer();
 $mail->IsSMTP();
